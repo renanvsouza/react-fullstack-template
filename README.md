@@ -1,6 +1,6 @@
 # Full-Stack TypeScript Template
 
-A base for full-stack apps using Node and React.
+A base template for full-stack apps using Node and React.
 
 
 ## Tech Stack
@@ -16,14 +16,12 @@ A base for full-stack apps using Node and React.
 Clone repository:
 
 ```shell
-git clone [repository-url]
+git clone https://github.com/renanvsouza/react-fullstack-template.git
 ```
 
 ```shell
-cd [project-directory]
+cd react-fullstack-template
 ```
-
-Using npm:
 
 ```shell
 npm install
