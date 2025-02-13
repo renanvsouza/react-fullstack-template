@@ -1,0 +1,21 @@
+{
+  "name": "app",
+  "workspaces": [
+    "web",
+    "api"
+  ],
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently --kill-others --names \"Web,API\" --prefix-colors \"cyan.bold,green.bold\" \"npm run dev --prefix web\" \"npm run dev --prefix api\"",
+    "build": "npm run build --prefix web && npm run build --prefix api",
+    "start": "NODE_ENV=production node api/dist/app.js",
+    "preview": "npm run preview --prefix web",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.24.0",
+    "@typescript-eslint/parser": "^8.24.0",
+    "concurrently": "^8.2.2",
+    "prettier": "^3.5.0"
+  }
+}
